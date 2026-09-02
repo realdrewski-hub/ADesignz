@@ -1,0 +1,27 @@
+.heading {
+  font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+  margin: 0 0 0.75rem;
+  max-width: 20ch;
+}
+
+.sub {
+  color: var(--ink-soft);
+  max-width: 32ch;
+  margin: 0 0 1.75rem;
+}
+
+.button {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--cream);
+  text-decoration: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  transition: background 150ms ease;
+}
+
+.button:hover {
+  background: var(--brass-dim);
+}

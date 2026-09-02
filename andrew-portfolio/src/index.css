@@ -1,0 +1,78 @@
+:root {
+  --cream: #f5f1e6;
+  --cream-deep: #ede6d4;
+  --ink: #1b2a41;
+  --ink-soft: #2c3e56;
+  --brass: #b8863d;
+  --brass-dim: #8f6a30;
+  --line-blue: #dce6ec;
+  --slate: #6b7b8c;
+  --border: #c9c0a8;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --measure: 40rem;
+  --gutter: clamp(1.5rem, 5vw, 4rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-display);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.01em;
+}
+
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.section-border {
+  border-top: 1px solid var(--border);
+}

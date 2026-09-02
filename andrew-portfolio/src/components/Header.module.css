@@ -1,0 +1,42 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  transition: color 150ms ease;
+}
+
+.nav a:hover {
+  color: var(--brass-dim);
+}
+
+@media (max-width: 32rem) {
+  .nav {
+    gap: 1.1rem;
+  }
+}
